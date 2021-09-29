@@ -1,0 +1,58 @@
+body {
+  background: -webkit-gradient(linear, left top, left bottom, from(#d2e7f5), to(white));
+  background: linear-gradient(to bottom, #d2e7f5, white);
+  background-attachment: fixed;
+}
+
+body .encabezado {
+  padding: 5px;
+  background-color: black;
+  text-align: center;
+}
+
+body .encabezado h1 {
+  color: aqua;
+  font-size: 30px;
+}
+
+body .principal .tabla .celda1 {
+  width: 15%;
+}
+
+body .principal .tabla .celda1 .mifoto {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+
+body .principal .tabla .celda2 {
+  width: 85%;
+}
+
+body .principal .tabla .celda2 .nombre {
+  text-align: center;
+  text-decoration: underline;
+  color: #090981;
+}
+
+body .principal .tabla .celda2 .nombre h2 {
+  font-size: 50px;
+}
+
+body .skills {
+  padding-left: 4px;
+  padding: 2px;
+  text-align: justify;
+}
+
+body .skills .apartados {
+  background: -webkit-gradient(linear, right top, left top, from(white), to(black));
+  background: linear-gradient(to left, white 0%, black 100%);
+}
+
+body .skills .apartados h2 {
+  color: white;
+  opacity: 70%;
+  font-style: italic;
+}
+/*# sourceMappingURL=style.css.map */
