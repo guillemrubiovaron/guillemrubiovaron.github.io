@@ -2,17 +2,45 @@
 @import "mixin";
 
 body {
-  background: $colordefondo;
-  background-attachment: fixed;
-  .encabezado {
-    padding: 5px;
-    background-color: $colorTitulo;
-    text-align: center;
-    h1 {
-      color: aqua;
-      font-size: 30px;
+  header {
+    width: 100%;
+    position: fixed;
+    nav {
+      background-color: black;
+      opacity: 70%;
+      overflow: hidden;
+
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        li {
+          float: right;
+          font-family: Arial, sans-serif;
+          font-size: 16px;
+          :hover {
+            background: #c9dfe9;
+            color: #000;
+            font-style: bold;
+          }
+          a {
+            display: block;
+            padding: 10px;
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+          }
+        }
+      }
     }
   }
+
+  .principal {  
+    background-color: rgb(168, 130, 238);
+    height: 500px;
+    width: 500px;
+  }
+
+  /*
   .principal {
     .tabla {
       .celda1 {
@@ -27,9 +55,9 @@ body {
         width: 85%;
         .nombre {
           text-align: center;
-          text-decoration: underline;
           color: $colorNombre;
-
+          font-family: Arial, Helvetica, sans-serif;
+          @include estilo_titulo();
           h2 {
             font-size: 50px;
           }
@@ -50,5 +78,5 @@ body {
         @include estilos_apartados($colorLetraApartados);
       }
     }
-  }
+  }*/
 }
