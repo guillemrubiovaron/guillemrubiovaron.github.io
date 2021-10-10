@@ -1,46 +1,72 @@
 @import "variables";
 @import "mixin";
 
-body {
-  header {
-    width: 100%;
-    position: fixed;
-    nav {
-      background-color: black;
-      opacity: 70%;
-      overflow: hidden;
+header {
+  width: 100%;
+  position: fixed;
+  nav {
+    background-color: black;
+    opacity: 70%;
+    overflow: hidden;
 
-      ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        li {
-          float: right;
-          font-family: Arial, sans-serif;
-          font-size: 16px;
-          :hover {
-            background: #c9dfe9;
-            color: #000;
-            font-style: bold;
-          }
-          a {
-            display: block;
-            padding: 10px;
-            color: rgb(255, 255, 255);
-            text-decoration: none;
-          }
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      li {
+        float: right;
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        :hover {
+          background: $colorprincipal;
+          color: #000;
+          font-style: bold;
+        }
+        a {
+          display: block;
+          padding: 10px;
+          color: rgb(255, 255, 255);
+          text-decoration: none;
         }
       }
     }
   }
+}
 
-  .principal {  
-    background-color: rgb(168, 130, 238);
-    height: 500px;
-    width: 500px;
-  }
+.espacio {
+  padding: 19px;
+  background-color: $colorprincipal;
+}
+.principal {
+  padding: 40px;
+  background-color: $colorprincipal;
+  height: 4000px;
+}
+.primero {
+  background-color: $colorprincipal;
+  width: 50%;
+}
 
-  /*
+.foto {
+  width: 350px;
+  height: 350px;
+  border-radius: 150%;
+  float:left;
+}
+.descripcion{
+  box-shadow: 2px 2px 5px  black;
+  border-radius: 5px;
+  margin-left: 20px;
+  padding-left: 20px;
+  width: 50%;
+  margin-top: 100px;
+  align-items: center;
+  float:left;
+  text-align: left;
+  background-color: rgb(212, 239, 255);
+}
+
+/*
   .principal {
     .tabla {
       .celda1 {
@@ -79,4 +105,3 @@ body {
       }
     }
   }*/
-}

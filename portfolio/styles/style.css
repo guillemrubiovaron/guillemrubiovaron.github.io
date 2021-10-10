@@ -1,5 +1,79 @@
-body {
-  /*
+header {
+  width: 100%;
+  position: fixed;
+}
+
+header nav {
+  background-color: black;
+  opacity: 70%;
+  overflow: hidden;
+}
+
+header nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+header nav ul li {
+  float: right;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+
+header nav ul li :hover {
+  background: #c9dfe9;
+  color: #000;
+  font-style: bold;
+}
+
+header nav ul li a {
+  display: block;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+}
+
+.espacio {
+  padding: 19px;
+  background-color: #c9dfe9;
+}
+
+.principal {
+  padding: 40px;
+  background-color: #c9dfe9;
+  height: 4000px;
+}
+
+.primero {
+  background-color: #c9dfe9;
+  width: 50%;
+}
+
+.foto {
+  width: 350px;
+  height: 350px;
+  border-radius: 150%;
+  float: left;
+}
+
+.descripcion {
+  -webkit-box-shadow: 2px 2px 5px  black;
+          box-shadow: 2px 2px 5px  black;
+  border-radius: 5px;
+  margin-left: 20px;
+  padding-left: 20px;
+  width: 50%;
+  margin-top: 100px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  float: left;
+  text-align: left;
+  background-color: #d4efff;
+}
+
+/*
   .principal {
     .tabla {
       .celda1 {
@@ -38,47 +112,4 @@ body {
       }
     }
   }*/
-}
-
-body header {
-  width: 100%;
-  position: fixed;
-}
-
-body header nav {
-  background-color: black;
-  opacity: 70%;
-  overflow: hidden;
-}
-
-body header nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-body header nav ul li {
-  float: right;
-  font-family: Arial, sans-serif;
-  font-size: 16px;
-}
-
-body header nav ul li :hover {
-  background: #c9dfe9;
-  color: #000;
-  font-style: bold;
-}
-
-body header nav ul li a {
-  display: block;
-  padding: 10px;
-  color: white;
-  text-decoration: none;
-}
-
-body .principal {
-  background-color: #a882ee;
-  height: 500px;
-  width: 500px;
-}
 /*# sourceMappingURL=style.css.map */
