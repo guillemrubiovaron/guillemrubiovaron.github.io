@@ -39,38 +39,44 @@ header nav ul li a {
   background-color: #c9dfe9;
 }
 
-.principal {
-  padding: 40px;
+.principal .datospersonales {
   background-color: #c9dfe9;
-  height: 4000px;
-}
-
-.primero {
-  background-color: #c9dfe9;
-  width: 50%;
-}
-
-.foto {
-  width: 350px;
-  height: 350px;
-  border-radius: 150%;
-  float: left;
-}
-
-.descripcion {
-  -webkit-box-shadow: 2px 2px 5px  black;
-          box-shadow: 2px 2px 5px  black;
-  border-radius: 5px;
-  margin-left: 20px;
-  padding-left: 20px;
-  width: 50%;
-  margin-top: 100px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  float: left;
+  padding: 5px;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 60px;
+  border-radius: 10px;
+  -webkit-box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.3);
+  box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.3);
   text-align: left;
-  background-color: #d4efff;
+}
+
+.principal .datospersonales p {
+  font-size: 18px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-variant: small-caps;
+}
+
+.principal .formacion {
+  background-color: #c9dfe9;
+  padding: 5px;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 60px;
+  border-radius: 10px;
+  -webkit-box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.3);
+  box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.3);
+  text-align: left;
+}
+
+.principal .formacion h2 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.principal .formacion p {
+  font-size: 18px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-variant: small-caps;
 }
 
 /*

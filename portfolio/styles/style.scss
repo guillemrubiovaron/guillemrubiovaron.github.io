@@ -37,33 +37,44 @@ header {
   padding: 19px;
   background-color: $colorprincipal;
 }
-.principal {
-  padding: 40px;
-  background-color: $colorprincipal;
-  height: 4000px;
-}
-.primero {
-  background-color: $colorprincipal;
-  width: 50%;
-}
 
-.foto {
-  width: 350px;
-  height: 350px;
-  border-radius: 150%;
-  float:left;
-}
-.descripcion{
-  box-shadow: 2px 2px 5px  black;
-  border-radius: 5px;
-  margin-left: 20px;
-  padding-left: 20px;
-  width: 50%;
-  margin-top: 100px;
-  align-items: center;
-  float:left;
-  text-align: left;
-  background-color: rgb(212, 239, 255);
+.principal {
+  .datospersonales {
+    background-color: $colorprincipal;
+    padding:5px;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 60px;
+    border-radius: 10px;
+    -webkit-box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.3);
+    box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.3);
+   text-align: left;
+   p{
+     font-size: 18px;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     font-variant: small-caps;
+     
+   }
+  }
+  .formacion{
+    background-color: $colorprincipal;
+    padding:5px;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 60px;
+    border-radius: 10px;
+    -webkit-box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.3);
+    box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.3);
+   text-align: left;
+   h2{
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   }
+   p{
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-variant: small-caps;
+   }
+  }
 }
 
 /*
