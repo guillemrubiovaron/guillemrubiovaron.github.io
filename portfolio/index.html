@@ -7,13 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="styles/normalize.css" rel="stylesheet" type="text/css">
     <link href="styles/style.css" rel="stylesheet" type="text/css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+        integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!--<link href="styles/style.scss" rel="stylesheet" type="text/css"> -->
     <title>CV Guillem Rubio Varon</title>
 </head>
 
 <body>
-    <header>
+    <!--   <header>
         <nav>
             <ul>
                 <li><a href="#">Formacion Academica</a></li>
@@ -23,155 +25,222 @@
                 <li><a href="#">Contacto</a></li>
             </ul>
         </nav>
-    </header>
+    </header
+
     <div class="espacio">
-        <!--espacio en blanco-->
-    </div>
+        espacio en blanco
+    </div>-->
 
+    <div class="container">
+        <div class="izquierda">
+            <div class="perfilTxt">
+                <div class="imgBx">
+                    <img class="myimg" src="img/yo.jpg">
 
+                </div>
+                <h2>Guillem Rubio Varón<br><span>Software & Web Developer</span></h2>
+            </div>
 
-    <div class="principal">
-        <div class="datospersonales">
-            <p>Guillem Rubio Varón</p>
-            <p>649414741</p>
-            <p>guillemrubiovaron@gmail.com</p>
+            <div class="informacionContacto">
+                <h3 class="title">Contacto</h3>
+                <ul>
+                    <li>
+                        <span class="icono"><i class="fa fa-phone-square" aria-hidden="true"></i></span>
+                        <span class="text">+34 649 41 47 41</span>
+                    </li>
+                    <li>
+                        <span class="icono"><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                        <span class="text">guillemrubiovaron@gmail.com</span>
+                    </li>
+                    <li>
+                        <span class="icono"><i class="fa fa-github" aria-hidden="true"></i></span>
+                        <span class="text">guillemrubiovaron.github.io/portfolio</span>
+                    </li>
+                    <li>
+                        <span class="icono"><i class="fa fa-linkedin" aria-hidden="true"></i></span>
+                        <span class="text">www.linkedin.com/guillemrubiovaron</span>
+                    </li>
+                    <li>
+                        <span class="icono"><i class="fa fa-globe" aria-hidden="true"></i></span>
+                        <span class="text">Barcelona,Cataluña,España</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="informacionContacto">
+                <h3 class="title">Formacion</h3>
+                <ul>
+                    <li>
+                        <h5>2019 - 2021</h5>
+                        <h4>Software developer</h4>
+                        <h4>Centre d'estudis politecnics</h4>
+                    </li>
+                    <li>
+                        <h5>2021 - 2022</h5>
+                        <h4>Web developer</h4>
+                        <h4>Centre d'estudis politecnics</h4>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="informacionContacto">
+                <h3 class="title">Idiomas</h3>
+                <ul>
+                    <li>
+                        <span class="text">Castellano</span>
+                        <span class="percent">
+                            <div style="width: 100%;"></div>
+                        </span>
+                    </li>
+                    <li>
+                        <span class="text">Catalan</span>
+                        <span class="percent">
+                            <div style="width: 100%;"></div>
+                        </span>
+                    </li>
+                    <li>
+                        <span class="text">English</span>
+                        <span class="percent">
+                            <div style="width: 80%;"></div>
+                        </span>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="derecha">
             
+            <!--<div class="about">
+                <h2 class="titulo2">Profile</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati sed tenetur vero commodi, quae,
+                    doloremque voluptatum dicta magnam quaerat delectus ratione eum, facilis alias blanditiis aliquam
+                    aliquid reprehenderit ipsum. Sint?</p>
+            </div> -->
+            <div class="about">
+                <h2 class="titulo2">Experiencia</h2>
+                <div class="box">
+                    <div class="anyosExperiencia">
+                        <h5>2017 - Actualmente</h5>
+                        <h5>Mercadona</h5>
+                    </div>
+                    <div class="text">
+                        <h4>Gerente B</h4>
+                        <p>- Llevar el turno: gestión del personal.<br>
+                            - Control de las ventas de la tienda, llevando a cabo las acciones necesarias para asegurar
+                            la máxima efectividad en la consecución de objetivos.<br>
+                            - Garantizar el suministro de mercancías.<br>
+                            - Gestión de caducidades, mermas y realización de inventarios.<br>
+                            - Capacidad para gestionar y analizar la evolución de la tienda y tratamiento de datos.<br>
+                            - Garantizar la correcta atención al cliente y resolver las incidencias que se den.<br>
+                            - Utilización de montacargas, transpaleta manual, transpaleta eléctrica<br>
+                        </p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="anyosExperiencia">
+                        <h5>2015 - 2017</h5>
+                        <h5>AmRest</h5>
+                    </div>
+                    <div class="text">
+                        <h4>Gerente de tienda</h4>
+                        <p>- Llevar turnos.<br>
+                            - Trabajar con sistema KPI.<br>
+                            - Contrataciones.<br>
+                            - Establecer los pedidos del restaurante e inventarios.<br>
+                            - Planes de caducidad, análisis de los descartes y desvíos de la tienda.<br>
+                            - Establecer también funciones de cocina, atención al cliente, limpieza, etc<br>
+                        </p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="anyosExperiencia">
+                        <h5>2013 - 2015</h5>
+                        <h5>BKSpain</h5>
+                    </div>
+                    <div class="text">
+                        <h4>Gerente de tienda</h4>
+                        <p>
+                            - Llevo la gerencia del restaurante<br>
+                            - Trabajar con sistema KPI.<br>
+                            - Contrataciones.<br>
+                            - Establecer los pedidos del restaurante.<br>
+                            - Inventarios.<br>
+                            - Establecer también funciones de cocina, atención al cliente, limpieza, etc.<br>
 
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+<div class="about skills">
+    <h2 class="titulo2">Habilidades profesionales</h2>
+    <div class="box">
+        <h4>Java</h4>
+        <div class="percent">
+            <div style="width:85%;"></div>
         </div>
-        <div class="formacion">
-            <h2>Formacion academica</h2>
-            <p>CFGS Dessarollo de aplicaciones multiplataforma. Centre d'estudis politecnics. 2021</br>
-                Desarrollo de software en diferentes lenguajes de programacion. </br>
-            </p>
-            <p>CFGS Realización multimedia. I.E.S. Mare de Deu de la Mercé. 2009</br>
-                Operario de cámara, técnico de sonido, iluminador, mixer, montador de atrezzo, postproducción
-                de video. </br>
-            </p>
-
+    </div>
+    <div class="box">
+        <h4>Html</h4>
+        <div class="percent">
+            <div style="width:95%;"></div>
         </div>
-
-
+    </div>
+    <div class="box">
+        <h4>css</h4>
+        <div class="percent">
+            <div style="width:90%;"></div>
+        </div>
+    </div>
+    <div class="box">
+        <h4>JavaScript</h4>
+        <div class="percent">
+            <div style="width:75%;"></div>
+        </div>
+    </div>
+    <div class="box">
+        <h4>php</h4>
+        <div class="percent">
+            <div style="width:75%;"></div>
+        </div>
+    </div>
+    <div class="box">
+        <h4>C#</h4>
+        <div class="percent">
+            <div style="width:80%;"></div>
+        </div>
+    </div>
+    <div class="box">
+        <h4>C++</h4>
+        <div class="percent">
+            <div style="width:80%;"></div>
+        </div>
+    </div>
+    <div class="box">
+        <h4>MySql</h4>
+        <div class="percent">
+            <div style="width:80%;"></div>
+        </div>
+    </div>
+    <div class="box">
+        <h4>photoshop</h4>
+        <div class="percent">
+            <div style="width:95%;"></div>
+        </div>
     </div>
 
 
+</div>
 
 
 
-
-
-
-
-
-
-  
-
-    <!-- 
-    <div class="principal">
-        <table class="tabla">
-
-            <tr>
-
-                <td class="celda1">
-                    <img src="img/mifoto.jpg" class="mifoto">
-                </td>
-
-                <td class="celda2">
-                    <div class="nombre">
-                        <h2>
-                            GUILLEM RUBIO VARON
-                        </h2>
-
-                    </div>
-
-                    <div class="email">
-                        guillemrubiovaron@gmail.com
-                    </div>
-                    <div class="telefono">
-                        Tel: 649414741
-                    </div>
-                </td>
-
-            </tr>
-
-        </table>
-
+        </div>
     </div>
-    <div class="skills">
-        <div class="apartados">
-            <h2>FORMACIÓN ACADÉMICA</br></h1>
-        </div>
-        CFGS Realización multimedia. I.E.S. Mare de Deu de la Mercé. 2009</br>
-        Operario de cámara, técnico de sonido, iluminador, mixer, montador de atrezzo, postproducción
-        de video.</br></br>
-        <div class="apartados">
-            <h2> VIDA PROFESIONAL</br></h1>
-        </div>
-        <h3>Mercadona (2017 – actualidad)</br></h3>
-        Gerente A.</br>
-        - Llevar el turno: gestión del personal.</br>
-        - Control de las ventas de la tienda, llevando a cabo las acciones necesarias para asegurar
-        la máxima efectividad en la consecución de objetivos.</br>
-        - Garantizar el suministro de mercancías.</br>
-        - Gestión de caducidades, mermas y realización de inventarios.</br>
-        - Capacidad para gestionar y analizar la evolución de la tienda y tratamiento de datos.</br>
-        - Garantizar la correcta atención al cliente y resolver las incidencias que se den.</br>
-        - Utilización de montacargas, transpaleta manual, transpaleta eléctrica.</br></br>
-        <h3> AmRest Holding SE – KFC (2016 – 2017)</br></h3>
-        Sub Gerente del restaurante:</br>
-        - Llevar turnos.</br>
-        - Trabajar con sistema KPI.</br>
-        - Contrataciones.</br>
-        - Establecer los pedidos del restaurante e inventarios.</br>
-        - Planes de caducidad, análisis de los descartes y desvíos de la tienda.</br>
-        - Establecer también funciones de cocina, atención al cliente, limpieza, etc.</br></br>
-        <h3> Bk Spain. Burguer King. (2013- 2016)</br></h3>
-        Gerente del restaurante:</br>
-        - Llevo la gerencia del restaurante</br>
-        - Trabajar con sistema KPI.</br>
-        - Contrataciones.</br>
-        - Establecer los pedidos del restaurante.</br>
-        - Inventarios.</br>
-        - Establecer también funciones de cocina, atención al cliente, limpieza, etc.</br></br>
-        <h3> CAP Sant Andreu. CAP Chafarinas. Centros de Salud. (2009-2013)</br></h3>
-        Auxiliar Administrativo:</br>
-        - Establecer visitas médicas con el programa SIAP y SAP.</br>
-        - Asistencia en mostrador de las diferentes plantas del centro.</br></br>
-        <h3> IMAX Port Vell. Cines IMAX 3D (2009-2010)</br></h3>
-        Azafato taquillero:</br>
-        - Responsable en sala.</br>
-        - Venta de entradas al público.</br></br>
-        <h3>Tiburón de animación. Creación de dibujos animados. (2008)</br></h3>
-        Ayudante de realización:</br>
-        - Montador con Adobe premier PRO.</br>
-        - Pintura Ink & Saint para la película de dibujos Cher Ami.</br></br>
-        <h3>ETV Televisión local de Esplugues de LLobregat. (2008)</br></h3>
-        Ayudante de realización:</br>
-        - Operario de cámara (plató y exterior).</br>
-        - Técnico de sonido (montaje de micros en plató y realización de audio en directo).</br>
-        - Reportero (entrevistas en la calle).</br></br>
-        <div class="apartados">
-            <h2> SOFTWARE</br></h1>
-        </div>
-        Pack Office Adobe Dreamweaver</br>
-        SIAP - SAP Flash 8</br>
-        Photoshop CS Sony Vegas</br>
-        Adobe Premier Pro Avid Media Composer (nociones)</br></br>
-        <div class="apartados">
-            <h2> IDIOMAS</br></h1>
-        </div>
-        Catalán y castellano: Lenguas maternas (Nivel C de Catalán).</br>
-        Inglés: Nivel medio</br></br>
-        <div class="apartados">
-            <h2> OTROS DATOS</br></h1>
-        </div>
-        Disponibilidad inmediata (salvo días de preaviso a la empresa actual).</br>
-        Flexibilidad horaria.</br>
-        Permiso de conducir tipo B y vehículo propio.</br>
-
-
+    </div>
     </div>
 
--->
+
 </body>
 
 </html>

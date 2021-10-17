@@ -1,118 +1,191 @@
 @import "variables";
 @import "mixin";
 
-header {
-  width: 100%;
-  position: fixed;
-  nav {
-    background-color: black;
-    opacity: 70%;
-    overflow: hidden;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
+}
 
-    ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      li {
-        float: right;
-        font-family: Arial, sans-serif;
-        font-size: 16px;
-        :hover {
-          background: $colorprincipal;
-          color: #000;
-          font-style: bold;
+body {
+  background-color: $colordefondo;
+  @include centrado();
+  min-height: 100vh;
+  .container {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0, 0, 0, 0.7);
+    .izquierda {
+      position: relative;
+      background: $colorfondoizquierda;
+      padding: 40px;
+      .perfilTxt {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 20px;
+        border-bottom: 1px solid rgb(71, 70, 70);
+        .imgBx {
+          position: relative;
+          width: 200px;
+          height: 200px;
+          border-radius: 50%;
+          box-shadow: 0 35px 55px rgba(0, 0, 0, 0.2);
+          overflow: hidden;
+          .myimg {
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
         }
-        a {
-          display: block;
-          padding: 10px;
-          color: rgb(255, 255, 255);
-          text-decoration: none;
+        h2 {
+          color: $colorNombre;
+          font-size: 1.5em;
+          margin-top: 20px;
+          text-transform: uppercase;
+          text-align: center;
+          font-weight: 600;
+          line-height: 1.4em;
+          span {
+            font-size: 0.8em;
+            font-weight: 300;
+          }
+        }
+      }
+      .informacionContacto {
+        padding-top: 40px;
+        .title {
+          color: $colorNombre;
+          text-transform: uppercase;
+          font-weight: 600;
+          letter-spacing: 1px;
+          margin-bottom: 20px;
+        }
+        ul {
+          position: relative;
+        }
+        li {
+          position: relative;
+          list-style: none;
+          margin: 10px 0;
+
+          .icono {
+            display: inline-block;
+            width: 30px;
+            font-size: 20px;
+            color: $colorIconos;
+          }
+          .percent {
+            position: relative;
+            width: 100%;
+            height: 6px;
+            background: $colorNombre;
+            display: block;
+            margin-top: 5px;
+            div {
+              position: absolute;
+              top: 0;
+              left: 0;
+              height: 100%;
+              background: $colorHabilidades;
+            }
+          }
+
+          span {
+            color: $colorNombre;
+            font-weight: 300;
+          }
+        }
+        h5 {
+          font-weight: 500;
+          color: $colorLetrasApartados;
+        }
+        h4 {
+          color: $colorNombre;
+          font-weight: 500;
         }
       }
     }
-  }
-}
+    .derecha {
+      position: relative;
+      background: $colorfondoderecha;
+      padding: 40px;
+      .about {
+        margin-bottom: 50px;
+        :last-child {
+          margin-bottom: 0;
+        }
+        .titulo2 {
+          color: $coloresTitulos;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+          margin-bottom: 10px;
+        }
+        p {
+          color: $colorTexto;
+        }
 
-.espacio {
-  padding: 19px;
-  background-color: $colorprincipal;
-}
-
-.principal {
-  .datospersonales {
-    background-color: $colorprincipal;
-    padding:5px;
-    margin-left: 20%;
-    margin-right: 20%;
-    margin-top: 60px;
-    border-radius: 10px;
-    -webkit-box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.3);
-    box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.3);
-   text-align: left;
-   p{
-     font-size: 18px;
-     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-     font-variant: small-caps;
-     
-   }
-  }
-  .formacion{
-    background-color: $colorprincipal;
-    padding:5px;
-    margin-left: 20%;
-    margin-right: 20%;
-    margin-top: 60px;
-    border-radius: 10px;
-    -webkit-box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.3);
-    box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.3);
-   text-align: left;
-   h2{
-     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-   }
-   p{
-    font-size: 18px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-variant: small-caps;
-   }
-  }
-}
-
-/*
-  .principal {
-    .tabla {
-      .celda1 {
-        width: 15%;
-        .mifoto {
-          width: 100%;
-          height: 100%;
-          border-radius: 5px;
+        .box {
+          display: flex;
+          flex-direction: row;
+          margin: 20px 0;
+          .anyosExperiencia {
+            min-width: 150px;
+            h5 {
+              text-transform: uppercase;
+              color: $coloresEmpresas;
+              font-weight: 600;
+            }
+          }
+          .text {
+            h4 {
+              text-transform: uppercase;
+              color: $coloresCategoria;
+              font-size: 16;
+            }
+          }
         }
       }
-      .celda2 {
-        width: 85%;
-        .nombre {
-          text-align: center;
-          color: $colorNombre;
-          font-family: Arial, Helvetica, sans-serif;
-          @include estilo_titulo();
-          h2 {
-            font-size: 50px;
+      .skills {
+        .box {
+          position: relative;
+          width: 100%;
+          display: grid;
+          grid-template-columns: 150px 1fr;
+          justify-content: center;
+          align-items: center;
+          h4 {
+            text-transform: uppercase;
+            color: $colorHabilidades;
+            font-weight: 500;
+          }
+          .percent {
+            position: relative;
+            width: 100%;
+            height: 10px;
+            background: $colorNombre;
+            div {
+              position: absolute;
+              top: 0;
+              left: 0;
+              height: 100%;
+              background: $colorHabilidades;
+            }
           }
         }
       }
     }
   }
-
-  .skills {
-    padding-left: 4px;
-    padding: 2px;
-    // background-color: $colorTitulo;
-    text-align: justify;
-
-    .apartados {
-      background: $colordefondoApartados;
-      h2 {
-        @include estilos_apartados($colorLetraApartados);
-      }
-    }
-  }*/
+}
