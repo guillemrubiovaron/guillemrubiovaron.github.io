@@ -1,0 +1,18 @@
+body {
+    background-color: #e7f0f1;
+    margin-top: 70px;
+  }
+
+.container{
+    background-color: rgb(232, 245, 227);
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-top: 120px;
+    width: 500px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: black;
+    
+    
+}
