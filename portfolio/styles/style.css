@@ -3,10 +3,10 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: "Times New Roman", Times, serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-body {
+* body {
   background-color: #ac4e42;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -17,14 +17,10 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  min-height: 100vh;
 }
 
-body .container {
-  position: relative;
-  width: 100%;
-  max-width: 1000px;
-  min-height: 1000px;
+* body .container {
+  max-width: 1400px;
   margin: 50px;
   display: -ms-grid;
   display: grid;
@@ -34,14 +30,12 @@ body .container {
           box-shadow: 0 35px 55px rgba(0, 0, 0, 0.7);
 }
 
-body .container .izquierda {
-  position: relative;
+* body .container .izquierda {
   background: chocolate;
-  padding: 40px;
+  padding: 50px;
 }
 
-body .container .izquierda .perfilTxt {
-  position: relative;
+* body .container .izquierda .perfilTxt {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -56,8 +50,7 @@ body .container .izquierda .perfilTxt {
   border-bottom: 1px solid #474646;
 }
 
-body .container .izquierda .perfilTxt .imgBx {
-  position: relative;
+* body .container .izquierda .perfilTxt .imgBx {
   width: 200px;
   height: 200px;
   border-radius: 50%;
@@ -66,38 +59,30 @@ body .container .izquierda .perfilTxt .imgBx {
   overflow: hidden;
 }
 
-body .container .izquierda .perfilTxt .imgBx .myimg {
-  width: 200px;
-  height: 200px;
-  position: absolute;
-  top: 0;
-  left: 0;
+* body .container .izquierda .perfilTxt .imgBx .myimg {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 
-body .container .izquierda .perfilTxt h2 {
+* body .container .izquierda .perfilTxt h2 {
   color: white;
-  font-size: 1.5em;
   margin-top: 20px;
   text-transform: uppercase;
   text-align: center;
-  font-weight: 600;
-  line-height: 1.4em;
+  font-weight: 500;
+  line-height: 1.5em;
 }
 
-body .container .izquierda .perfilTxt h2 span {
-  font-size: 0.8em;
+* body .container .izquierda .perfilTxt h2 span {
+  font-size: 1em;
   font-weight: 300;
 }
 
-body .container .izquierda .informacionContacto {
-  padding-top: 40px;
+* body .container .izquierda .informacionContacto {
+  padding-top: 15px;
 }
 
-body .container .izquierda .informacionContacto .title {
+* body .container .izquierda .informacionContacto .title {
   color: white;
   text-transform: uppercase;
   font-weight: 600;
@@ -105,81 +90,108 @@ body .container .izquierda .informacionContacto .title {
   margin-bottom: 20px;
 }
 
-body .container .izquierda .informacionContacto ul {
-  position: relative;
-}
-
-body .container .izquierda .informacionContacto li {
-  position: relative;
+* body .container .izquierda .informacionContacto li {
   list-style: none;
-  margin: 10px 0;
+  margin: 3px 0;
 }
 
-body .container .izquierda .informacionContacto li .icono {
+* body .container .izquierda .informacionContacto li .icono {
   display: inline-block;
-  width: 30px;
-  font-size: 20px;
+  width: 27px;
+  font-size: 17px;
   color: #fdab4d;
 }
 
-body .container .izquierda .informacionContacto li .percent {
+* body .container .izquierda .informacionContacto li a {
+  text-decoration: none;
+  color: white;
+}
+
+* body .container .izquierda .informacionContacto li .porcentaje {
   position: relative;
   width: 100%;
-  height: 6px;
+  height: 9px;
   background: white;
   display: block;
   margin-top: 5px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
 }
 
-body .container .izquierda .informacionContacto li .percent div {
+* body .container .izquierda .informacionContacto li .porcentaje div {
   position: absolute;
   top: 0;
   left: 0;
   height: 100%;
-  background: #ff500a;
+  background: -webkit-gradient(linear, left top, right top, from(#ffaf4b), color-stop(75%, #ff920a), color-stop(99%, white), to(white));
+  background: linear-gradient(to right, #ffaf4b 0%, #ff920a 75%, white 99%, white 100%);
+  border-radius: 10px;
 }
 
-body .container .izquierda .informacionContacto li span {
+* body .container .izquierda .informacionContacto li span {
   color: white;
   font-weight: 300;
 }
 
-body .container .izquierda .informacionContacto h5 {
+* body .container .izquierda .informacionContacto h5 {
   font-weight: 500;
   color: #750303;
 }
 
-body .container .izquierda .informacionContacto h4 {
+* body .container .izquierda .informacionContacto h4 {
   color: white;
   font-weight: 500;
 }
 
-body .container .derecha {
-  position: relative;
+* body .container .izquierda .estrella {
+  margin-top: 40px;
+  height: 200px;
+  width: 200px;
+  background-color: #f1a15f;
+  -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+          clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+  opacity: 20%;
+  margin-left: 60px;
+}
+
+* body .container .derecha {
   background: #e6b87d;
   padding: 40px;
 }
 
-body .container .derecha .about {
+* body .container .derecha .about {
   margin-bottom: 50px;
 }
 
-body .container .derecha .about :last-child {
+* body .container .derecha .about :last-child {
   margin-bottom: 0;
 }
 
-body .container .derecha .about .titulo2 {
-  color: #fd7e07;
+* body .container .derecha .about .titulo2 {
+  border-radius: 22px;
+  background: #fd7e07;
+  -webkit-box-shadow: 5px 5px 30px black;
+          box-shadow: 5px 5px 30px black;
+  color: white;
   text-transform: uppercase;
-  letter-spacing: 1px;
-  margin-bottom: 10px;
+  letter-spacing: 1.5px;
+  margin-bottom: 20px;
+  padding: 4px;
+  padding-left: 20px;
+  font-weight: 600;
+  line-height: 1.5em;
+  border: 2px solid rgba(0, 0, 0, 0.7);
 }
 
-body .container .derecha .about p {
+* body .container .derecha .about p {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   color: #5a5a5a;
 }
 
-body .container .derecha .about .box {
+* body .container .derecha .about .box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -187,27 +199,29 @@ body .container .derecha .about .box {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  margin: 20px 0;
+  margin: 30px 0;
+  border-left: 6px solid #ac4e42;
+  padding-left: 4px;
 }
 
-body .container .derecha .about .box .anyosExperiencia {
-  min-width: 150px;
+* body .container .derecha .about .box .anyosExperiencia {
+  min-width: 170px;
 }
 
-body .container .derecha .about .box .anyosExperiencia h5 {
+* body .container .derecha .about .box .anyosExperiencia h5 {
   text-transform: uppercase;
   color: #af612d;
   font-weight: 600;
+  margin-bottom: 5px;
 }
 
-body .container .derecha .about .box .text h4 {
+* body .container .derecha .about .box .text h4 {
   text-transform: uppercase;
   color: #6e431a;
   font-size: 16;
 }
 
-body .container .derecha .skills .box {
-  position: relative;
+* body .container .derecha .skills .box {
   width: 100%;
   display: -ms-grid;
   display: grid;
@@ -221,24 +235,31 @@ body .container .derecha .skills .box {
           align-items: center;
 }
 
-body .container .derecha .skills .box h4 {
+* body .container .derecha .skills .box h4 {
   text-transform: uppercase;
-  color: #ff500a;
+  color: linear-gradient(to right, #ffaf4b 0%, #ff920a 75%, white 99%, white 100%);
   font-weight: 500;
 }
 
-body .container .derecha .skills .box .percent {
+* body .container .derecha .skills .box .porcentaje {
   position: relative;
   width: 100%;
-  height: 10px;
+  height: 9px;
   background: white;
+  display: block;
+  margin-top: 5px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
 }
 
-body .container .derecha .skills .box .percent div {
+* body .container .derecha .skills .box .porcentaje div {
   position: absolute;
   top: 0;
   left: 0;
   height: 100%;
-  background: #ff500a;
+  background: -webkit-gradient(linear, left top, right top, from(#ffaf4b), color-stop(75%, #ff920a), color-stop(99%, white), to(white));
+  background: linear-gradient(to right, #ffaf4b 0%, #ff920a 75%, white 99%, white 100%);
+  border-radius: 10px;
 }
 /*# sourceMappingURL=style.css.map */

@@ -5,183 +5,169 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Times New Roman", Times, serif;
-}
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 
-body {
-  background-color: $colordefondo;
-  @include centrado();
-  min-height: 100vh;
-  .container {
-    position: relative;
-    width: 100%;
-    max-width: 1000px;
-    min-height: 1000px;
-    margin: 50px;
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    box-shadow: 0 35px 55px rgba(0, 0, 0, 0.7);
-    .izquierda {
-      position: relative;
-      background: $colorfondoizquierda;
-      padding: 40px;
-      .perfilTxt {
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding-bottom: 20px;
-        border-bottom: 1px solid rgb(71, 70, 70);
-        .imgBx {
-          position: relative;
-          width: 200px;
-          height: 200px;
-          border-radius: 50%;
-          box-shadow: 0 35px 55px rgba(0, 0, 0, 0.2);
-          overflow: hidden;
-          .myimg {
+  body {
+    background-color: $colordefondo;
+    @include centrado();
+    .container {
+      max-width: 1400px;
+      margin: 50px;
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      box-shadow: 0 35px 55px rgba(0, 0, 0, 0.7);
+      .izquierda {
+        background: $colorfondoizquierda;
+        padding: 50px;
+        .perfilTxt {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          padding-bottom: 20px;
+          border-bottom: 1px solid rgb(71, 70, 70);
+          .imgBx {
             width: 200px;
             height: 200px;
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-          }
-        }
-        h2 {
-          color: $colorNombre;
-          font-size: 1.5em;
-          margin-top: 20px;
-          text-transform: uppercase;
-          text-align: center;
-          font-weight: 600;
-          line-height: 1.4em;
-          span {
-            font-size: 0.8em;
-            font-weight: 300;
-          }
-        }
-      }
-      .informacionContacto {
-        padding-top: 40px;
-        .title {
-          color: $colorNombre;
-          text-transform: uppercase;
-          font-weight: 600;
-          letter-spacing: 1px;
-          margin-bottom: 20px;
-        }
-        ul {
-          position: relative;
-        }
-        li {
-          position: relative;
-          list-style: none;
-          margin: 10px 0;
-
-          .icono {
-            display: inline-block;
-            width: 30px;
-            font-size: 20px;
-            color: $colorIconos;
-          }
-          .percent {
-            position: relative;
-            width: 100%;
-            height: 6px;
-            background: $colorNombre;
-            display: block;
-            margin-top: 5px;
-            div {
-              position: absolute;
-              top: 0;
-              left: 0;
+            border-radius: 50%;
+            box-shadow: 0 35px 55px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            .myimg {
+              width: 100%;
               height: 100%;
-              background: $colorHabilidades;
             }
           }
-
-          span {
+          h2 {
             color: $colorNombre;
-            font-weight: 300;
-          }
-        }
-        h5 {
-          font-weight: 500;
-          color: $colorLetrasApartados;
-        }
-        h4 {
-          color: $colorNombre;
-          font-weight: 500;
-        }
-      }
-    }
-    .derecha {
-      position: relative;
-      background: $colorfondoderecha;
-      padding: 40px;
-      .about {
-        margin-bottom: 50px;
-        :last-child {
-          margin-bottom: 0;
-        }
-        .titulo2 {
-          color: $coloresTitulos;
-          text-transform: uppercase;
-          letter-spacing: 1px;
-          margin-bottom: 10px;
-        }
-        p {
-          color: $colorTexto;
-        }
-
-        .box {
-          display: flex;
-          flex-direction: row;
-          margin: 20px 0;
-          .anyosExperiencia {
-            min-width: 150px;
-            h5 {
-              text-transform: uppercase;
-              color: $coloresEmpresas;
-              font-weight: 600;
-            }
-          }
-          .text {
-            h4 {
-              text-transform: uppercase;
-              color: $coloresCategoria;
-              font-size: 16;
-            }
-          }
-        }
-      }
-      .skills {
-        .box {
-          position: relative;
-          width: 100%;
-          display: grid;
-          grid-template-columns: 150px 1fr;
-          justify-content: center;
-          align-items: center;
-          h4 {
+            margin-top: 20px;
             text-transform: uppercase;
-            color: $colorHabilidades;
+            text-align: center;
+            font-weight: 500;
+            line-height: 1.5em;
+            span {
+              font-size: 1em;
+              font-weight: 300;
+            }
+          }
+        }
+        .informacionContacto {
+          padding-top: 15px;
+          .title {
+            color: $colorNombre;
+            text-transform: uppercase;
+            font-weight: 600;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+          }
+          li {
+            list-style: none;
+            margin: 3px 0;
+
+            .icono {
+              display: inline-block;
+              width: 27px;
+              font-size: 17px;
+              color: $colorIconos;
+            }
+            a {
+              text-decoration: none;
+              color: $colorNombre;
+            }
+
+            .porcentaje {
+              @include barrasPorcentaje();
+            }
+
+            span {
+              color: $colorNombre;
+              font-weight: 300;
+            }
+          }
+          h5 {
+            font-weight: 500;
+            color: $colorLetrasApartados;
+          }
+          h4 {
+            color: $colorNombre;
             font-weight: 500;
           }
-          .percent {
-            position: relative;
+        }
+
+        .estrella {
+          margin-top: 40px;
+          height: 200px;
+          width: 200px;
+          background-color: rgb(241, 161, 95);
+          clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+          opacity: 20%;
+          margin-left: 60px;
+        }
+      }
+      .derecha {
+        background: $colorfondoderecha;
+        padding: 40px;
+        .about {
+          margin-bottom: 50px;
+          :last-child {
+            margin-bottom: 0;
+          }
+          .titulo2 {
+            border-radius: 22px;
+            background: $coloresTitulos;
+            box-shadow: 5px 5px 30px $colorSombra;
+            color: $colorNombre;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            margin-bottom: 20px;
+            padding: 4px;
+            padding-left: 20px;
+            font-weight: 600;
+            line-height: 1.5em;
+            border: 2px solid rgba(0, 0, 0, 0.7);
+          }
+          p {
+            justify-content: center;
+            color: $colorTexto;
+          }
+
+          .box {
+            display: flex;
+            flex-direction: row;
+            margin: 30px 0;
+            border-left: 6px solid $colordefondo;
+            padding-left: 4px;
+            .anyosExperiencia {
+              min-width: 170px;
+
+              h5 {
+                text-transform: uppercase;
+                color: $coloresEmpresas;
+                font-weight: 600;
+                margin-bottom: 5px;
+              }
+            }
+            .text {
+              h4 {
+                text-transform: uppercase;
+                color: $coloresCategoria;
+                font-size: 16;
+              }
+            }
+          }
+        }
+        .skills {
+          .box {
             width: 100%;
-            height: 10px;
-            background: $colorNombre;
-            div {
-              position: absolute;
-              top: 0;
-              left: 0;
-              height: 100%;
-              background: $colorHabilidades;
+            display: grid;
+            grid-template-columns: 150px 1fr;
+            justify-content: center;
+            align-items: center;
+            h4 {
+              text-transform: uppercase;
+              color: $colorHabilidades;
+              font-weight: 500;
+            }
+            .porcentaje {
+              @include barrasPorcentaje();
             }
           }
         }

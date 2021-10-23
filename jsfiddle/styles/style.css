@@ -2,15 +2,9 @@
 body{
   padding: 0%;
   margin: 0%;
-  background-color: rgb(238, 238, 245);
+  background:  linear-gradient(90deg, #7490b1 10%, #bfcbdb 90%);
   padding-bottom: 50px;
-  /*
- background: linear-gradient(
-    20deg,1
-    rgb(129, 221, 106) 0%,
-    rgb(42, 175, 102) 35%,
-    rgb(1, 4, 49) 100%
-  );*/
+  
 }
 .nav-tabs .nav-link.active{
   background-color: rgb(134, 125, 214);
