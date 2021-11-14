@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Personal css-->
+    <link href="styles/style.css" rel="stylesheet" type="text/css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>DOM Document Guillem Rubio Varón</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <a class="navbar-brand" href="#">
+                    <h4> Guillem Rubio Varón</h4>
+                </a>
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+
+                        <a class="nav-link" href="https://github.com/guillemrubiovaron">GitHub<img
+                                src="img/git.png"></a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.linkedin.com/in/guillem-rubio-varón-87a985b9">Linkedin<img
+                                src="img/linkedin.png" width="32px" height="32px"></a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </nav>
+
+    </header>
+    <div class="principal">
+        <h2>DOM Documento</h2>
+        <!--<b>Introducción</b><br> -->
+        Para poder hablar del Documento del DOM primero tenemos que tener un concepto sobre que es el DOM.<br>
+        DOM <i>(Docuement Object Model)</i> es la parte que crea el navegador a partir del html siendo un estándar de
+        acceso al documento, que define la forma en que los objetos y los elementos se relacionan entre si en el
+        navegador. El responsable de mantener un estándar en el DOM es el W3C.
+        <br>
+        Podremos encontrar mas informacion sobre el DOM <a href="https://www.w3schools.com/js/js_htmldom.asp">aqui</a>
+        <br><br>
+        EL Documento del DOM es la raíz del árbol de nodos de cualquier pagina XHTML. El XHTML es código HTML expresado
+        en forma de XML, siendo mucho mas estricto y jerárquico.
+        Es un nodo especial denominado “Documento”.
+        De la etiqueta Documento derivan sus etiquetas hijas que son HEAD y BODY. Todos los elementos que se creen se
+        crearan de manera jerárquica.La estrutura principal del DOM es la siguiente.<br>
+        <div class="imgContainer">
+            <img src="img/img2.png">
+        </div>
+        Las etiquetas que van creandose a partir del Documento son los denominados
+        elementos. Dentro de los elementos podemos encontrar otro tipo de nodos que son los textos formando la siguiente
+        jerarquía.
+        <br>
+        <div class="imgContainer">
+            <img src="img/img1.png">
+        </div>
+        Desde la parte de código de JS podremos acceder a todos los elementos de nuestro documento del DOM usando la
+        palabra reservada
+        document. + la acción que queremos realizar, pudiendo así añadir nuevos elementos, encontrar referencias, etc.
+        </p>
+    </div>
+
+    <div class="contenedorJsfiddle">
+        <iframe width="100%" height="300" src="//jsfiddle.net/guillemrubiovaron/7ku16qwt/40/embedded/js,html,css,result/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+        </script>
+
+
+</body>
+
+</html>
