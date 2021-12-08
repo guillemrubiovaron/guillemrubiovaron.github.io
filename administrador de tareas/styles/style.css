@@ -1,0 +1,39 @@
+
+/*MI PALETA DE COLORES PERSONALIZADA*/
+
+.dark-primary-color    { background: #AFB42B; }
+.default-primary-color { background: #CDDC39; }
+.light-primary-color   { background: #F0F4C3; }
+.text-primary-color    { color: #212121; }
+.accent-color          { background: #607D8B; }
+.primary-text-color    { color: #212121; }
+.secondary-text-color  { color: #757575; }
+.divider-color         { border-color: #BDBDBD; }
+
+
+body{
+    background-color: rgb(225, 225, 225);
+    margin: 5px;
+    padding: 5px;
+}
+.principal{
+    margin-top: 20px;
+}
+.bgheader{
+    background-color: rgb(251, 251, 252);
+}
+.bgcard{
+    background-color: rgb(238, 243, 243);
+}
+
+.cardPersonalizada
+{
+box-shadow:
+  2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+  6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+  12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+  22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+  41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+  100px 100px 80px rgba(0, 0, 0, 0.07)
+;
+}
