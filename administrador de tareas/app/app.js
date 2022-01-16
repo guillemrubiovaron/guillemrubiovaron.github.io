@@ -6,8 +6,6 @@ let imgGuardar = document.getElementById("imgGuardar").addEventListener("click",
 const miDate = document.getElementById("date");
 const miTitulo = document.getElementById("tarea");
 const miDescripcion = document.getElementById("descripcion");
-let msgError = "";
-
 
 
 function guardarTareas(e) {
@@ -17,9 +15,8 @@ function guardarTareas(e) {
     else if (e.target)
         tag = e.target.tagName;
 
-        document.getElementById("h1propio").innerHTML=" LA ULTIMA TAREA HA SIDO AÑADIDA DESDE: "+tag;
-    /* alert("Tarea añadida desde: " + tag); */
-
+    document.getElementById("h1propio").innerHTML = " LA ULTIMA TAREA HA SIDO AÑADIDA DESDE: " + tag;
+    
     let tituloTarea = document.getElementById("tarea").value
 
     let descripcionTarea = document.getElementById("descripcion").value
