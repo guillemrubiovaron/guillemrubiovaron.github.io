@@ -17,63 +17,56 @@
 
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-              <a class="navbar-brand" href="#"><h4> Guillem Rubio Varón</h4> </a>
-              <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                <li class="nav-item">
-                    
-                  <a class="nav-link" href="https://github.com/guillemrubiovaron">GitHub<img src="img/git.png"></a>
-                </li>
-                 
-                <li class="nav-item">
-                  <a class="nav-link" href="https://www.linkedin.com/in/guillem-rubio-varón-87a985b9">Linkedin<img src="img/linkedin.png" width="32px" height="32px"></a>
-                </li>
-                
-              </ul>
-             
+                <a class="navbar-brand" href="#">
+                    <h4> Guillem Rubio Varón</h4>
+                </a>
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://github.com/guillemrubiovaron">GitHub<img
+                                src="img/git.png"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.linkedin.com/in/guillem-rubio-varón-87a985b9">Linkedin<img
+                                src="img/linkedin.png" width="32px" height="32px"></a>
+                    </li>
+                </ul>
             </div>
-          </nav>
-     
+        </nav>
     </header>
 
     <div class="container principal">
         <div class="row pt-5">
-            <div class="col-md-4">
+            <div class="col-md-5">
                 <div class="card cardPersonalizada">
-                    <input type="date">
+                    <div class="card-header"><b>CREE SU TAREA</b></div>
+                    <input id="date" type="date" class="midate">
                     <div class="card-body">
                         <form id="formulario">
                             <div class="form-group">
-                                <input type="text" id="tarea" placeholder="Introduce tarea" class="form-control">
+                                <input type="text" id="tarea" placeholder="Introduce tarea" class="form-control titulo">
                             </div>
                             <div class="form-group">
-                                <textarea id="descripcion" rows="8" cols="80" class="form-control" placeholder="Descipcion"></textarea>
+                                <textarea id="descripcion" rows="8" cols="80" class="form-control descripcion"
+                                    placeholder="Descipcion" style="resize: none;"></textarea>
                             </div>
-                            <button type="submit" class="btn btn-primary btn-block">Guardar</button>
+                            <button id="btn" class="btn btn-primary btn-block miboton">Guardar</button>
+                            <img src="img/save.png" id="imgGuardar">
                         </form>
                     </div>
                 </div>
+                <h1 id="h1propio"></h1>
             </div>
-
-
-            <div class="col-md-8">
+           
+            <div class="col-md-7">
                 <div id="tareas"></div>
             </div>
         </div>
     </div>
-
-
-
-
-
-
-
-
-
-
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
