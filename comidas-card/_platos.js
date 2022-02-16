@@ -5,7 +5,7 @@ const _platos = [
         precio: 7.99,
         descripcion:
             "Canelones caseros rellenos de carne",
-        img: "./img/canelones.png",
+        img: "/comidas-card/img/canelones.png",
         tipo:"primero",
     },
     {
@@ -14,7 +14,7 @@ const _platos = [
         precio: 6.99,
         descripcion:
             "Macarrones con salsa boloñesa",
-        img: "./img/macarrones.png",
+        img: "/comidas-card/img/macarrones.png",
         tipo:"primero",
     },
     {
@@ -23,7 +23,7 @@ const _platos = [
         precio: 6.5,
         descripcion:
             "Espaguetis a la boloñesa",
-        img: "./img/espaguetis.png",
+        img: "/comidas-card/img/espaguetis.png",
         tipo:"primero",
     },
     {
@@ -32,7 +32,7 @@ const _platos = [
         precio: 4.99,
         descripcion:
             "Ensalada de la casa buenisima",
-        img: "./img/ensalada.png",
+        img: "/comidas-card/img/ensalada.png",
         tipo:"primero",
     },
     {
@@ -41,7 +41,7 @@ const _platos = [
         precio: 2,
         descripcion:
             "Agua bezoya",
-        img: "./img/agua.png",
+        img: "/comidas-card/img/agua.png",
         tipo:"bebida",
     }, 
     {
@@ -50,7 +50,7 @@ const _platos = [
         precio: 3,
         descripcion:
             "Coca cola fresca",
-        img: "./img/coca-cola.png",
+        img: "/comidas-card/img/coca-cola.png",
         tipo:"bebida",
     },
     {
@@ -59,7 +59,7 @@ const _platos = [
         precio: 9,
         descripcion:
             "Bistec de vaca gallega 46 dias de maduracion",
-        img: "./img/bistec.png",
+        img: "/comidas-card/img/bistec.png",
         tipo:"segundo",
     }
 

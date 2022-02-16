@@ -1,7 +1,7 @@
-import primeros from "/views/primeros.js";
-import segundos from "/views/segundos.js";
-import carrito from "/views/carrito.js";
-import bebidas from "/views/bebidas.js";
+import primeros from "/comidas-card/views/primeros.js";
+import segundos from "/comidas-card/views/segundos.js";
+import carrito from "/comidas-card/views/carrito.js";
+import bebidas from "/comidas-card/views/bebidas.js";
 
 
 const routes = {
